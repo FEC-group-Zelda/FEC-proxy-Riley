@@ -1,9 +1,10 @@
 const express = require('express');
 const path = require('path');
+const bodyParser = require('body-parser');
 
 let proxy = express();
 
-proxy.use(express.static(path.join(__dirname, '../client/dist')));
+proxy.use(express.static(path.join(__dirname, './public')));
 proxy.use(bodyParser.json());
 proxy.use(bodyParser.urlencoded({ extended: false }));
 

@@ -1,26 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="/style.css">
-    <title>Team Zelda - SoundCloud</title>
+    <link rel="icon" href="https://fec-comments-images.s3.us-east-2.amazonaws.com/iconfinder_Soundcloud-1_174237.png">
+    <title>Soundcloud</title>
+    <link rel="stylesheet" type="text/css" href="/style.css" />
   </head>
   <body>
-    <div id="footer"></div>
-    <div id="MediaFeed"></div>
-    <div id="CommentsFeedModule"></div>
-    <div id="sidebar"></div>
-    <script src="node_modules/react/umd/react.development.js"></script>
-    <script src="node_modules/react-dom/umd/react-dom.development.js"></script>
-    <script src="http://localhost:4000"></script><!--Nick-->
-    <script src="http://localhost:3306"></script><!--Justin-->
-    <script src="http://localhost:3005"></script>
-    <script src="http://localhost:4444"></script><!--Mariah-->
-    <script>
-      ReactDOM.render(React.createElement(footer),document.getElementById("footer"));
-      ReactDOM.render(React.createElement(MediaFeed),document.getElementById("MediaFeed"));
-      ReactDOM.render(React.createElement(CommentsFeedModule),document.getElementById("CommentsFeedModule"));
-      ReactDOM.render(React.createElement(sidebar),document.getElementById("sidebar"));
-    </script>
+    <div id="app">
+      <div id="MediaFeed"></div>
+      <div id="CommentsFeedModule"></div>
+      <div id="sidebar"></div>
+      <div id="footer"></div>
+     </div>
+    <script src="http://localhost:3005/bundle.js"></script>
+    <script src="http://localhost:4444/bundle.js"></script>
+    <script src="http://localhost:3306/bundle.js"></script>
+    <script src="http://localhost:4000/bundle.js"></script>
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
   </body>
 </html>
