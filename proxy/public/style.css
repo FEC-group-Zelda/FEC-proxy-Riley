@@ -3,28 +3,62 @@ body {
   color: #333;
   font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;
   background-color: #f2f2f2;
-  margin: 0;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+head {
+  height: 0;
+}
+
+#white {
+  display: block;
+  margin: 0 auto;
+  margin-top: 0;
+  padding: 0;
+  height: 100vh;
+  width: 1240px;
+  background-color: #ffffff;
+  z-index: 0;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+.sticky + .content {
+  padding-top: 102px;
 }
 
 #app {
   display: block;
   margin: 0 auto;
-  margin-top: 0;
   padding: 0;
-  height: 10000px;
+  height: 100vh;
   width: 1240px;
   background-color: #ffffff;
+  top: 0;
+  z-index: 0.5;
+  position: relative;
 }
 
 #MediaFeed {
   position: relative;
   padding: 0;
   margin: 0;
+  top: 0;
 }
 
 #CommentsFeedModule {
   background-color: #ffffff;
-  position:relative;
+  position: relative;
   top: 400px;
   width: 860px;
   padding-right: 20px;
