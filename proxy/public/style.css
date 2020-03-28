@@ -9,10 +9,23 @@ body {
 
 head {
   height: 0;
+  margin: 0;
+  padding: 0;
 }
 
 #white {
-  display: block;
+  display: fixed;
+  margin: 0 auto;
+  margin-top: 0;
+  padding: 0;
+  height: 100vh;
+  width: 1240px;
+  background-color: #ffffff;
+  z-index: 0;
+}
+
+#whitee{
+  display: fixed;
   margin: 0 auto;
   margin-top: 0;
   padding: 0;
@@ -23,14 +36,14 @@ head {
 }
 
 .content {
-  padding: 16px;
+  padding: 10px;
 }
 
 .sticky {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 0;
+  z-index: -1;
 }
 
 .sticky + .content {
@@ -38,13 +51,12 @@ head {
 }
 
 #app {
-  display: block;
   margin: 0 auto;
   padding: 0;
   height: 100vh;
   width: 1240px;
   background-color: #ffffff;
-  top: 0;
+  top: 0px;
   z-index: 0.5;
   position: relative;
 }
